@@ -1,0 +1,47 @@
+.ca-list {
+    @apply flex flex-row;
+}
+
+.ca-list-ol {
+    @apply flex flex-col list-inside list-decimal tracking-tight mb-6;
+
+    li {
+        @apply mb-2;
+
+        &:last-child {
+            @apply mb-0;
+        }
+    }
+}
+
+.ca-list-ul {
+    @apply flex flex-col list-inside list-disc tracking-tight mb-6;
+
+    li {
+        @apply mb-2;
+
+        &:last-child {
+            @apply mb-0;
+        }
+    }
+}
+
+.ca-list-dl {
+    @apply flex flex-col list-inside list-none mb-6;
+
+    li {
+        @apply mb-4;
+
+        &:last-child {
+            @apply mb-0;
+        }
+    }
+
+    dt {
+        @apply font-serif font-medium text-lg tracking-tight italic;
+    }
+
+    dd {
+        @apply font-sans font-normal text-base tracking-tight;
+    }
+}

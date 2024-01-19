@@ -1,0 +1,219 @@
+/* Button themes */
+
+// Primary
+
+.ca-button--primary {
+  @apply border-slate-700 bg-slate-700 text-white;
+
+  &:hover {
+    @apply border-violet-200 bg-violet-200 text-violet-500;
+  }
+
+  &:active {
+    @apply border-violet-300 bg-violet-200 text-violet-500;
+  }
+}
+
+.ca-button--primaryOutline {
+  @apply border-slate-500 bg-transparent text-slate-700;
+
+  &:hover {
+    @apply border-slate-700 bg-slate-700 text-white;
+  }
+}
+
+.ca-button--primaryGhost {
+  @apply border-slate-100 bg-slate-100 text-slate-700;
+
+  &:hover {
+    @apply border-slate-200 bg-slate-200 text-slate-800;
+  }
+
+  &:active {
+    @apply border-violet-300 bg-violet-200 text-violet-900;
+  }
+}
+
+// Secondary
+
+.ca-button--secondary {
+  @apply border-gray-200 bg-gray-200 text-gray-700;
+
+    &:hover {
+        @apply border-gray-300 bg-gray-300 text-gray-800;
+    }
+}
+
+.ca-button--secondaryOutline {
+  @apply border-gray-200 bg-transparent text-gray-700;
+
+    &:hover {
+        @apply border-violet-200 bg-violet-200 text-violet-800;
+    }
+}
+
+.ca-button--secondaryGhost {
+  @apply border-gray-100 bg-gray-100 text-gray-700;
+
+    &:hover {
+        @apply border-gray-200 bg-gray-200 text-gray-800;
+    }
+
+    &:active {
+        @apply border-gray-300 bg-gray-300 text-gray-800;
+    }
+}
+
+// Brand
+
+.ca-button--brand {
+  @apply border-violet-600 bg-violet-500 text-white;
+
+    &:hover {
+        @apply border-violet-600 bg-violet-600 text-white;
+    }
+}
+
+.ca-button--brandOutline {
+  @apply border-violet-200 bg-transparent text-violet-900;
+
+    &:hover {
+        @apply border-violet-400 bg-violet-200 text-violet-800;
+    }
+}
+
+.ca-button--brandGhost {
+  @apply border-violet-200 bg-violet-200 text-violet-900;
+
+    &:hover {
+        @apply border-violet-500 bg-violet-500 text-white;
+    }
+}
+
+// Success
+
+.ca-button--success {
+  @apply border-emerald-600 bg-emerald-600 text-white;
+
+    &:hover {
+        @apply border-emerald-700 bg-emerald-700 text-emerald-200;
+    }
+}
+
+.ca-button--successOutline {
+  @apply border-emerald-500 bg-transparent text-emerald-500;
+
+    &:hover {
+        @apply border-emerald-600 bg-emerald-600 text-white;
+    }
+}
+
+.ca-button--successGhost {
+  @apply border-emerald-200 bg-emerald-200 text-emerald-900;
+
+    &:hover {
+        @apply border-emerald-700 bg-emerald-700 text-emerald-200;
+    }
+}
+
+// Warning
+
+.ca-button--warning {
+  @apply border-amber-500 bg-amber-500 text-white;
+
+    &:hover {
+        @apply border-amber-600 bg-amber-600 text-white;
+    }
+
+    &:active {
+        @apply border-amber-600 bg-amber-600 text-white;
+    }
+}
+
+.ca-button--warningOutline {
+  @apply border-amber-500 bg-transparent text-amber-600;
+
+    &:hover {
+        @apply border-amber-500 bg-amber-500 text-white;
+    }
+
+    &:active {
+        @apply border-amber-500 bg-amber-500 text-white;
+    }
+}
+
+.ca-button--warningGhost {
+  @apply border-amber-200 bg-amber-200 text-amber-900;
+
+    &:hover {
+        @apply border-amber-500 bg-amber-500 text-white;
+    }
+
+    &:active {
+        @apply border-amber-600 bg-amber-600 text-amber-100;
+    }
+}
+
+// Info
+
+.ca-button--info {
+  @apply border-blue-500 bg-blue-500 text-white;
+
+    &:hover {
+        @apply border-blue-600 bg-blue-600 text-white;
+    }
+
+    &:active {
+        @apply border-blue-600 bg-blue-600 text-white;
+    }
+}
+
+.ca-button--infoOutline {
+  @apply border-blue-300 bg-transparent text-blue-500;
+
+    &:hover {
+        @apply border-blue-300 bg-blue-300 text-blue-900;
+    }
+
+    &:active {
+        @apply border-blue-500 bg-blue-500 text-white;
+    }
+}
+
+.ca-button--infoGhost {
+  @apply border-blue-200 bg-blue-200 text-blue-900;
+
+    &:hover {
+        @apply border-blue-300 bg-blue-300 text-blue-900;
+    }
+
+    &:active {
+        @apply border-blue-500 bg-blue-500 text-white;
+    }
+}
+
+// Danger
+
+.ca-button--danger {
+  @apply border-rose-500 bg-rose-500 text-white;
+
+    &:hover {
+        @apply border-rose-500 bg-rose-600 text-white;
+    }
+}
+
+.ca-button--dangerOutline {
+  @apply border-rose-200 bg-transparent text-rose-800;
+
+    &:hover {
+        @apply border-rose-500 bg-rose-300 text-rose-800;
+    }
+}
+
+.ca-button--dangerGhost {
+  @apply border-rose-200 bg-rose-200 text-rose-800;
+
+    &:hover {
+        @apply border-rose-500 bg-rose-500 text-white;
+    }
+}

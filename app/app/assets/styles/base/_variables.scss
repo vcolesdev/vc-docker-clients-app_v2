@@ -1,0 +1,28 @@
+/**
+ * Variables
+ * --------------------------------------------------
+ * Global variables for use throughout the project.
+ * @namespace "ca-"
+ */
+
+@use "sass:map";
+
+// Colors
+
+// Typography
+
+/* Font Families */
+
+$arbutus-slab: "Arbutus Slab"; // 1 weight (400)
+$vollkorn: "Vollkorn";
+$dm-sans: "DM Sans";
+
+/* Font Assignments */
+
+$ca-font-slab: $arbutus-slab;
+$ca-font-serif: $vollkorn;
+$ca-font-sans: $dm-sans;
+
+$ca-font-display: $ca-font-slab;
+$ca-font-headings: $ca-font-serif;
+$ca-font-body: $ca-font-sans;

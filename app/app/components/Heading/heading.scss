@@ -1,0 +1,54 @@
+@use "sass:map";
+
+/* Heading Sizes*/
+
+$ca-heading-size : (
+    "h1": 1.82rem,
+    "h2": 1.63rem,
+    "h3": 1.443rem,
+    "h4": 1.277rem,
+    "h5": 1rem,
+);
+
+/* Heading Variants */
+
+$ca-heading-variant : (
+  "h1": "h1",
+  "h2": "h2",
+  "h3": "h3",
+  "h4": "h4",
+  "h5": "h5",
+);
+
+/* Heading Sizes */
+
+// Loop through each key value pair in $ca-heading-size
+// and assign the key as the class name and the value
+// as the font-size
+@each $key, $value in $ca-heading-size {
+    .ca-headingSize--#{$key} {
+        font-size: $value;
+    }
+}
+
+/* Heading - Variants */
+
+.ca-headingVariant--h1 {
+    @apply font-display font-semibold tracking-tighter;
+}
+
+.ca-headingVariant--h2 {
+    @apply font-display font-medium tracking-tighter;
+}
+
+.ca-headingVariant--h3 {
+    @apply font-serif font-medium tracking-tight italic;
+}
+
+.ca-headingVariant--h4 {
+    @apply font-sans font-medium tracking-tight;
+}
+
+.ca-headingVariant--h5 {
+    @apply font-sans font-semibold tracking-wider uppercase;
+}

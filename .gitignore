@@ -1,0 +1,11 @@
+.idea/
+.docker/mongodb/logs/
+.docker/nginx/logs/
+
+.env
+*.map
+
+app/.next
+app/node_modules
+
+api/node_modules

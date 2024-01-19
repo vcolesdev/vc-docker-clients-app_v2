@@ -1,0 +1,90 @@
+@use "sass:map";
+
+/* Font Sizes*/
+
+$ca-font-size : (
+    "footnote": 0.75rem, // 12px
+    "caption": 0.875rem, // 14px
+    "small": 0.875rem, // 14px
+    "base": 1rem, // 16px
+    "big": 1.125rem, // 18px
+    "lead": 1.25rem, // 20px
+    "subheading": 1.5rem, // 24px
+    "heading": 1.875rem, // 30px
+    "title": 2.25rem, // 36px
+    "display": 3rem, // 48px
+    "jumbo": 4rem, // 64px
+);
+
+/* Text Variants */
+
+$ca-text-variant : (
+  "footnote": "footnote",
+  "caption": "caption",
+  "small": "small",
+  "base": "base",
+  "big": "big",
+  "lead": "lead",
+  "subheading": "subheading",
+  "heading": "heading",
+  "title": "title",
+  "display": "display",
+  "jumbo": "jumbo",
+);
+
+/* Text Sizes */
+
+// Loop through each key value pair in $ca-text-size 
+// and assign the key as the class name and the value 
+// as the font-size
+@each $key, $value in $ca-font-size {
+    .ca-fontSize--#{$key} {
+        font-size: $value;
+    }
+}
+
+/* Text - Variants */
+
+.ca-textVariant--footnote {
+    @apply tracking-[1.2px] font-semibold uppercase;
+}
+
+.ca-textVariant--caption {
+    @apply font-sans font-medium italic;
+}
+
+.ca-textVariant--small {
+    @apply font-sans font-semibold tracking-tight;
+}
+
+.ca-textVariant--base {
+    @apply font-sans;
+}
+
+.ca-textVariant--big {
+    @apply font-sans font-medium tracking-tight;
+}
+
+.ca-textVariant--lead {
+    @apply font-serif font-medium;
+}
+
+.ca-textVariant--subheading {
+    @apply font-serif font-medium italic;
+}
+
+.ca-textVariant--heading {
+    @apply font-display font-semibold tracking-tight;
+}
+
+.ca-textVariant--title {
+    @apply font-display font-medium tracking-tight;
+}
+
+.ca-textVariant--display {
+    @apply font-display tracking-tight;
+}
+
+.ca-textVariant--jumbo {
+    @apply font-display tracking-tight;
+}

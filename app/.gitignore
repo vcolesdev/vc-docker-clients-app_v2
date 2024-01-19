@@ -1,0 +1,5 @@
+.next
+/node_nodules/
+/certificates
+
+package-lock.json
